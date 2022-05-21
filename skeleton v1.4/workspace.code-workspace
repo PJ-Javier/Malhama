@@ -1,8 +1,10 @@
 {
 	"folders": [
 		{
-			"path": "C:\\Users\\ASUS\\Downloads\\TOURIST SPOTS IMAGES"
+			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "skeleton v1.4"
+	}
 }

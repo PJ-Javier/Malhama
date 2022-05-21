@@ -5,22 +5,24 @@ body{
 nav{
   top:0px;
   background-color:#7B2D26;
-  position:fixed;
+  position:absolute;
   width:100%;
   margin:0px;
   display:flex;
   justify-content:center;
-  z-index:1;
 }
 ul{
   list-style-type:none;
   padding-inline-start:0px;
+  width:75%;
+  display: flex;
+  justify-content:space-between;
 }
 li{
   font-family: 'abril fatface',cursive;
   color: #DEAF68;
   float:left;
-  padding:35px;
+  padding:20px;
 }
 article{
   display:flex;
@@ -35,13 +37,25 @@ a:hover{
   cursor:pointer;
 }
 
+
+#dropdown{
+  display: block;
+  position: relative;
+  background-color: #000;
+  color: white;
+  width:150px;
+  flex-wrap: wrap;
+
+}
+
 .category-choice img{
   max-width:250%;
+  max-height:448px;
   transform:translate(-25%, 0);
 }
 .category-choice{
   width:300px;
-  height:auto;
+  max-height:auto;
   overflow:hidden;
   margin:20px;
 }
@@ -75,8 +89,8 @@ a:hover{
 }
 .emirate-text{
   position:absolute;
-  top:50%;
-  left:17.5%;
+  width: 100%;
+  top: 40%;
 }
 .emirate-text > h1, h3{
   text-align:center;
@@ -86,6 +100,7 @@ a:hover{
 }
 .emirate-text > h1{
   font-size:10vw;
+  font-family: 'Aclonica', sans-serif;
 }
 .emirate-text > h3{
   font-size:5vw;
@@ -94,6 +109,7 @@ a:hover{
 .slideshow, .emirate-img{
   width:100%;
 }
+
 .img-container{
   width:50%;
 }
@@ -112,7 +128,7 @@ a:hover{
 }
 .txt-container h2{
   font-family: 'aclonica',sans-serif;
-  font-size:30px;
+  font-size:20px;
   padding-top:0px;
   padding-bottom:0px;
   margin-bottom:10px;
@@ -124,11 +140,12 @@ a:hover{
 }
 .txt-container > button, .destination-desc > button, .destination-desc-top > button{
   border:none;
+  font-family: 'aclonica',sans-serif;
   color:white;
   background-color:black;
-  font-size:20px;
+  font-size:15px;
   padding:15px;
-  margin-left:40px;
+  margin-left:20px;
   width:33.3333%;
   margin-bottom: 10px;
   cursor: pointer;
@@ -215,4 +232,22 @@ a:hover{
   flex-direction:column;
   justify-content:center;
   align-items:center;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  background-color:#7B2D26;
+  justify-content: space-evenly;
+  width:100%;
+  padding:20px;
+}
+
+footer>img {
+  height:50px;
+}
+
+button>a {
+  color:white;
+  text-decoration: none;
 }
