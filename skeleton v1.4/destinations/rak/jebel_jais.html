@@ -3,23 +3,46 @@
   <title>Malhama | Jebel Jais</title>
   <head>
     <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Urbanist&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('#drop').click(function(){
+            $('#dropdown').toggle()
+           }).trigger('click');
+       });
+    </script>
   </head>
   <body>
     <nav>
       <ul>
-        <li><a>HOME</a></li>
-        <li><a>DESTINATIONS</a></li>
+        <li><a href="../../main_menu.html">HOME</a></li>
+        <div id="drop">
+          <li><a>DESTINATIONS</a></li>
+              <div id="dropdown">
+                <ul>
+                  <li><a href="../../emirate_page/ad.html"> Abu Dhabi</a></li>
+                  <li><a href="../../emirate_page/ajman.html">Ajman</a></li>
+                  <li><a href="../../emirate_page/dubai.html">Dubai</a></li>
+                  <li><a href="../../emirate_page/fujairah.html">Fujairah</a></li>
+                  <li><a href="../../emirate_page/rak.html">Ras Al Khaimah</a></li>
+                  <li><a href="../../emirate_page/sharjah.html">Sharjah</a></li>
+                  <li><a href="../../emirate_page/uaq.html">Umm Al Quwain</a></li>
+                </ul>
+              </div>
+        </div>
         <li style="background-image:url('/images/logo.png'); background-size:100%;"><a style="opacity:0%;">MALHAMA</a></li>
-        <li><a>TRAVEL</a></li>
+        <li><a href="../../itinerarygen.html">TRAVEL</a></li>
         <li><a>ABOUT</a></li>
       </ul>
     </nav>
     <section style="height:600px; background-image:url('/images/rak/Jebel Jais/1068099831194363616.jpg');  background-color: rgba(255,255,255,0.6);
-    background-blend-mode: lighten; background-size:cover;"><h1 style="font-size:80px; text-align:center; transform:translateY(200px); color:black;  text-shadow: 2px 2px rgba(255,255,255,0.6);">JEBEL JAIS</h1></section>
+    background-blend-mode: lighten; background-size:cover;">
+    <h1 style="font-size:80px; text-align:center; transform:translateY(200px); color:black;  text-shadow: 2px 2px rgba(255,255,255,0.6); font-family: 'abril fatface',cursive;">Jebel Jais</h1></section>
     <section class="emirate-desc">
       <p style="margin-top:60px; text-align:left;">Jebel Jais is definitely the UAE’s tallest mountain and is every bit as exciting as a tall mountain should be. being part of the cloud-piercing Hajar mountains. Rugged, and at times wind -swept, valleys with sweeping views… and absolute isolation. The range of this extends from Ras Al Khaimah on the eastern side of the country to the Musandam peninsula on the north-eastern part of neighboring country Oman. These dramatic landscapes could potentially offer life-changing, adrenaline-pumping adventures and experiences. The summit is accessible by hiking, and the area itself has hosted the annual road cycling event of the UAE Tour, and the world’s longest zipline at 2,832 kilometres, opened in 2018.<p>
       <hr style="margin:0 auto; margin-top:-60px; margin-bottom:50px;" size="3" width="75%" color="black" noshade>
@@ -28,9 +51,9 @@
       <div class="gmaps-view" style="background-color:yellow;"><h1>Dito ang google maps iframe, ako na bahala</h1></div>
       <div class="content-view">
         <button style="width:55%; padding:20px; font-size:25px; border:none;">Contact Info</button>
-        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Mobile Number: N/A</p>
-        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:55%; font-weight:bold;">Email:  N/A     </p>
-        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Phone: +971 7 233 3411 </p>
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;"><a href="https://visitjebeljais.com/">Website</a></p>
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Mobile Number: +971 50 280 3662</p>
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Phone Number: +971 7 233 3411 </p>
       </div>
     </section>
   </body>

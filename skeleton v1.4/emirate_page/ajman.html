@@ -4,14 +4,40 @@
   <head>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="shortcut icon" href="../images/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Urbanist&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../carousel.js" type="text/javascript" defer></script>
+
+    <script>
+      $(document).ready(function(){
+        $('#drop').click(function(){
+            $('#dropdown').toggle()
+           }).trigger('click');
+       });
+    </script>
   </head>
   <body>
     <nav>
       <ul>
-        <li><a>HOME</a></li>
-        <li><a>DESTINATIONS</a></li>
+        <li><a href="../main_menu.html">HOME</a></li>
+        <div id="drop">
+          <li><a>DESTINATIONS</a></li>
+              <div id="dropdown">
+                <ul>
+                  <li><a href="ad.html"> Abu Dhabi</a></li>
+                  <li><a href="ajman.html">Ajman</a></li>
+                  <li><a href="dubai.html">Dubai</a></li>
+                  <li><a href="fujairah.html">Fujairah</a></li>
+                  <li><a href="ras_al_khaima.html">Ras Al Khaimah</a></li>
+                  <li><a href="sharjah.html">Sharjah</a></li>
+                  <li><a href="uaq.html">Umm Al Quwain</a></li>
+                </ul>
+              </div>
+        </div>
         <li style="background-image:url('../images/logo.png'); background-size:100%;"><a style="opacity:0%;">MALHAMA</a></li>
-        <li><a>TRAVEL</a></li>
+        <li><a href="../itinerarygen.html">TRAVEL</a></li>
         <li><a>ABOUT</a></li>
       </ul>
     </nav>
@@ -27,6 +53,7 @@
       <p>Akin to other emirates, the Ajman region and its settlers dabbled on fishing and pearling and as the region’s biggest boat building center, with thousands of dhows that sailed through the Gulf constructed in its shipyards—through skills and craft passed down through tradition. </p>
 
       <p>After its contentions with the British Naval Powers and truces and peace treaties ensued, the emirate found itself in federation with others hence the birth of the United Arab Emirates.</p>
+<<<<<<< Updated upstream
       <h2>Explore</h2>
       <p>Being in the middle of the Emirates, it enjoys easy accessibility. Known for its beaches where you can spot dolphins to its souqs and cultural spots. Ajman, despite its size, promises a worthwhile experience on a budget.</p>
       <hr style="margin:0 auto" size="3" width="75%" color="black" noshade>
@@ -34,16 +61,27 @@
         <div class="category-choice"><img src="../images/placeholder.jpg"/><p>CULTURE</p></div>
         <div class="category-choice"><img src="../images/placeholder.jpg"/><p>NATURE</p></div>
         <div class="category-choice"><img src="../images/placeholder.jpg"/><p>FAMILY</p></div>
+=======
+      <button><a href="../images/Pamphlet/AJMAN.pdf" download="AJMAN Pamphlet">Download Pamphlet</a></button>
+      <h2>Explore</h2>
+      <hr style="margin-bottom:10px" size="3" width="80%" color="black" noshade>
+      <p>Being in the middle of the Emirates, it enjoys easy accessibility. Known for its beaches where you can spot dolphins to its souqs and cultural spots. Ajman, despite its size, promises a worthwhile experience on a budget.</p>
+      <div id="slider" class="slider">
+        <div class="wrapper">
+          <a id="prev" class="control prev"></a>
+        <div id="items" class="items">
+            <img class="slide" src="../images/ad/Ferrari world Overhead.jpg" alt="">
+            <img class="slide" src="../images/ad/Louvre.jpg" alt="">
+            <img class="slide" src="../images/placeholder.jpg" alt="">
+            <img class="slide" src="../images/ad/Warner brothers Outside entrance.jpg" alt="">
+        </div>
+          <a id="next" class="control next"></a>
+        </div>
+>>>>>>> Stashed changes
       </div>
     </section>
-    <nav>
-      <ul>
-        <li><a>HOME</a></li>
-        <li><a>DESTINATIONS</a></li>
-        <li style="background-image:url('../images/logo.png'); background-size:100%;"><a style="opacity:0%;">MALHAMA</a></li>
-        <li><a>TRAVEL</a></li>
-        <li><a>ABOUT</a></li>
-      </ul>
-    </nav>
+    <footer>
+      <p >Ⓒ Malhama Tourism All Rights Reserved 2022</p>
+    </footer>
   </body>
 </html>

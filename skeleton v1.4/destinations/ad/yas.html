@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <title>Malhama | Yas Water World</title>
+  <title>Malhama | Yas Island</title>
   <head>
     <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Urbanist&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('#drop').click(function(){
+            $('#dropdown').toggle()
+           }).trigger('click');
+       });
+    </script>
   </head>
   <body>
     <nav>
       <ul>
-        <li><a>HOME</a></li>
-        <li><a>DESTINATIONS</a></li>
+        <li><a href="../../main_menu.html">HOME</a></li>
+        <div id="drop">
+          <li><a>DESTINATIONS</a></li>
+              <div id="dropdown">
+                <ul>
+                  <li><a href="../../emirate_page/ad.html"> Abu Dhabi</a></li>
+                  <li><a href="../../emirate_page/ajman.html">Ajman</a></li>
+                  <li><a href="../../emirate_page/dubai.html">Dubai</a></li>
+                  <li><a href="../../emirate_page/fujairah.html">Fujairah</a></li>
+                  <li><a href="../../emirate_page/rak.html">Ras Al Khaimah</a></li>
+                  <li><a href="../../emirate_page/sharjah.html">Sharjah</a></li>
+                  <li><a href="../../emirate_page/uaq.html">Umm Al Quwain</a></li>
+                </ul>
+              </div>
+        </div>
         <li style="background-image:url('/images/logo.png'); background-size:100%;"><a style="opacity:0%;">MALHAMA</a></li>
-        <li><a>TRAVEL</a></li>
+        <li><a href="../../itinerarygen.html">TRAVEL</a></li>
         <li><a>ABOUT</a></li>
       </ul>
     </nav>
     <section style="height:600px; background-image:url('/images/ad/Yas Waterworld Overhead.jpg');  background-color: rgba(255,255,255,0.6);
+<<<<<<< Updated upstream
     background-blend-mode: lighten; background-size:cover;"><h1 style="font-size:80px; text-align:center; transform:translateY(200px); color:black;  text-shadow: 2px 2px rgba(255,255,255,0.6);">YAS ISLAND</h1></section>
     <section class="emirate-desc">
       <p style="margin-top:60px; text-align:left;">
@@ -29,15 +52,43 @@
       <p style="margin-top:60px; text-align:left;">
         Yas Mall:  As the UAE’s second-largest, shopping centre, Yas Mall. The light-drenched three-level mall offers an impressive array of stores, including international retailers and eateries, and a 20-screen cinema.
       <p>
+=======
+    background-blend-mode: lighten; background-size:cover;">
+    <h1 style="font-size:80px; text-align:center; transform:translateY(200px); color:black;  text-shadow: 2px 2px rgba(255,255,255,0.6); font-family: 'abril fatface',cursive;">Yas Island</h1></section>
+    <section class="emirate-desc">
+      <p style="margin-top:40px; text-align:left;">
+        This landmark, family-friendly entertainment hub is just a 30-minute drive from the city and a 15-minute drive from Abu Dhabi International Airport. Yas Island is home to an F1™ race track, several theme parks, an incredible links golf course, beautiful beach, stunning hotels, an impressive mall and much more. It's the perfect place to bring the kids, from toddler to teen, for a fun-filled holiday by the sea.<p>
+        Yas Water World: Yas Waterworld Abu Dhabi is a waterpark with Emirati heritage at its heart. The Lost Pearl is the central theme, following the story of a young Emirati girl on a quest to find a legendary pearl. Sitting atop Jebel Dhana, the park’s towering centrepiece, sits an enormous pearl, bringing The Lost Pearl theme to life visually. Spanning 15 football pitches, this amazing full-day park experience brings you and your family exhilarating water-based activities across a range of thrill levels.
+      <p style="text-align:left;">
+        Yas Mall:  As the UAE’s second-largest, shopping centre, Yas Mall. The light-drenched three-level mall offers an impressive array of stores, including international retailers and eateries, and a 20-screen cinema.
+      <p>
+        <div id="slider" class="slider">
+          <div class="wrapper">
+            <a id="prev" class="control prev"></a>
+          <div id="items" class="items">
+              <img class="slide" src="../../images/ad/Yas Waterworld Lazy River.jpg" alt="">
+              <img class="slide" src="../../images/ad/Yas Waterworld Lazy River.jpg" alt="">
+              <img class="slide" src="../../images/ad/Yas Waterworld Overhead.jpg" alt="">
+          </div>
+            <a id="next" class="control next"></a>
+          </div>
+        </div>
+>>>>>>> Stashed changes
       <hr style="margin:0 auto; margin-top:-60px; margin-bottom:50px;" size="3" width="75%" color="black" noshade>
     </section>
     <section style="height:500px; display:flex; margin-bottom:80px;">
       <div class="gmaps-view" style="background-color:yellow;"><h1>Dito ang google maps iframe, ako na bahala</h1></div>
       <div class="content-view">
         <button style="width:55%; padding:20px; font-size:25px; border:none;">Contact Info</button>
+<<<<<<< Updated upstream
         <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Mobile Number: N/A</p>
         <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:55%; font-weight:bold;">Email: contact@yasconcierge.com</p>
         <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Phone: 800 9276255 | +971 600 511115</p>
+=======
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;"><a href="https://www.yaswaterworld.com/">Website</a></p>
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:55%; font-weight:bold;">Email: contact@yasconcierge.com</p>
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Phone Number: 800 9276255 | +971 600 511115</p>
+>>>>>>> Stashed changes
       </div>
     </section>
   </body>

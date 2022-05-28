@@ -3,10 +3,19 @@
   <title>Malhama | Pearl Kingdom</title>
   <head>
     <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Urbanist&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('#drop').click(function(){
+            $('#dropdown').toggle()
+           }).trigger('click');
+       });
+    </script>
   </head>
   <body>
     <nav>
@@ -14,12 +23,13 @@
         <li><a>HOME</a></li>
         <li><a>DESTINATIONS</a></li>
         <li style="background-image:url('/images/logo.png'); background-size:100%;"><a style="opacity:0%;">MALHAMA</a></li>
-        <li><a>TRAVEL</a></li>
+        <li><a href="../../itinerarygen.html">TRAVEL</a></li>
         <li><a>ABOUT</a></li>
       </ul>
     </nav>
     <section style="height:600px; background-image:url('/images/sharjah/Pearl Kingdom/P1.jpg');  background-color: rgba(255,255,255,0.6);
-    background-blend-mode: lighten; background-size:cover;"><h1 style="font-size:80px; text-align:center; transform:translateY(200px); color:white;  text-shadow: 2px 2px #7B2D26;">PEARL KINGDOM</h1></section>
+    background-blend-mode: lighten; background-size:cover;">
+    <h1 style="font-size:80px; text-align:center; transform:translateY(200px); color:black;  text-shadow: 2px 2px rgba(255,255,255,0.6); font-family: 'abril fatface',cursive;">Pearl Kingdom</h1></section>
     <section class="emirate-desc">
       <p style="margin-top:60px; text-align:left;">A waterpark located at Flag Island, it is one of the Sharjah Investment and Development Authority’s developments into family-friendly infrastructure in the emirate. It features exciting water slides, speed slides, lazy rivers, and multiple rides. There are also shows and events available depending on the occasion or day, with a Costume Party available every October. Zumba, DJ and Kids Weekend events for every weekend, and Ladies’ Day every Tuesday. It is one of the sections of the Al Montazah Park, located at the opposite end of Flag Island. There is free parking, sold food and souvenirs, though pets are not allowed. The park entry fee is free for children below 80 centimeters; otherwise it is 30 AED, while Pearl Kingdom itself has a 150 AED fee for adults above 110 cm, and 110 AED for children 80 to 110 cm. The park is open from 10 AM to 9 PM.    <p>
       <hr style="margin:0 auto; margin-top:-60px; margin-bottom:50px;" size="3" width="75%" color="black" noshade>
@@ -28,9 +38,9 @@
       <div class="gmaps-view" style="background-color:yellow;"><h1>Dito ang google maps iframe, ako na bahala</h1></div>
       <div class="content-view">
         <button style="width:55%; padding:20px; font-size:25px; border:none;">Contact Info</button>
-        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Phone Number:</p>
-        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">+971 6 511 0555</p>
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;"><a href="https://pearl.almontazah.ae/">Website</a></p>
         <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:55%; font-weight: bold;">Email: info@almontazah.ae, booking@almontazah.ae</p>
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Phone Number: +971 6 511 0555</p>
       </div>
     </section>
   </body>

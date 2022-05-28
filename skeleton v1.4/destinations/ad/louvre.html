@@ -3,23 +3,46 @@
   <title>Malhama | Louvre Abu Dhabi</title>
   <head>
     <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Urbanist&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('#drop').click(function(){
+            $('#dropdown').toggle()
+           }).trigger('click');
+       });
+    </script>
   </head>
   <body>
     <nav>
       <ul>
-        <li><a>HOME</a></li>
-        <li><a>DESTINATIONS</a></li>
+        <li><a href="../../main_menu.html">HOME</a></li>
+        <div id="drop">
+          <li><a>DESTINATIONS</a></li>
+              <div id="dropdown">
+                <ul>
+                  <li><a href="../../emirate_page/ad.html"> Abu Dhabi</a></li>
+                  <li><a href="../../emirate_page/ajman.html">Ajman</a></li>
+                  <li><a href="../../emirate_page/dubai.html">Dubai</a></li>
+                  <li><a href="../../emirate_page/fujairah.html">Fujairah</a></li>
+                  <li><a href="../../emirate_page/rak.html">Ras Al Khaimah</a></li>
+                  <li><a href="../../emirate_page/sharjah.html">Sharjah</a></li>
+                  <li><a href="../../emirate_page/uaq.html">Umm Al Quwain</a></li>
+                </ul>
+              </div>
+        </div>
         <li style="background-image:url('/images/logo.png'); background-size:100%;"><a style="opacity:0%;">MALHAMA</a></li>
-        <li><a>TRAVEL</a></li>
+        <li><a href="../../itinerarygen.html">TRAVEL</a></li>
         <li><a>ABOUT</a></li>
       </ul>
     </nav>
     <section style="height:600px; background-image:url('/images/ad/Louvre Outside.jpg');  background-color: rgba(255,255,255,0.6);
-    background-blend-mode: lighten; background-size:cover;"><h1 style="font-size:80px; text-align:center; transform:translateY(200px); color:black;  text-shadow: 2px 2px rgba(255,255,255,0.6);">LOUVRE ABU DHABI</h1></section>
+    background-blend-mode: lighten; background-size:cover;">
+    <h1 style="font-size:80px; text-align:center; transform:translateY(200px); color:black;  text-shadow: 2px 2px rgba(255,255,255,0.6); font-family: 'abril fatface',cursive;">Louvre Abu Dhabi</h1></section>
     <section class="emirate-desc">
       <p style="margin-top:60px; text-align:left;">The Louvre is an ongoing cultural project originating from France that was initially built in 1190. It had expanded over to the United Arab Emirates, thanks in part to an intergovernmental agreement signed between the UAE and France back in 2007. Eventually, that led to its construction on Saadiyat Island in 2009, and inauguration at 2017. The partnership would combine the UAE’s bold vision of cultural progression and openness, with France’s expertise in the world of art and museums. It would explore the shared themes that reveal and connect humanity. </p>
 
@@ -32,9 +55,15 @@
       <div class="gmaps-view" style="background-color:yellow;"><h1>Dito ang google maps iframe, ako na bahala</h1></div>
       <div class="content-view">
         <button style="width:55%; padding:20px; font-size:25px; border:none;">Contact Info</button>
+<<<<<<< Updated upstream
         <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Mobile Number: N/A</p>
         <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:55%; font-weight:bold;">Email:  contact@louvreabudhabi.ae </p>
         <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Phone: +971-600-56-55-66 </p>
+=======
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;"><a href="https://www.louvreabudhabi.ae/">Website</a></p>
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:55%; font-weight:bold;">Email:  contact@louvreabudhabi.ae </p>
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Phone Number: +971 600 565566 </p>
+>>>>>>> Stashed changes
       </div>
     </section>
   </body>

@@ -3,34 +3,57 @@
   <title>Malhama | Lamer Beach</title>
   <head>
     <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Urbanist&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('#drop').click(function(){
+            $('#dropdown').toggle()
+           }).trigger('click');
+       });
+    </script>
   </head>
   <body>
     <nav>
       <ul>
-        <li><a>HOME</a></li>
-        <li><a>DESTINATIONS</a></li>
+        <li><a href="../../main_menu.html">HOME</a></li>
+        <div id="drop">
+          <li><a>DESTINATIONS</a></li>
+              <div id="dropdown">
+                <ul>
+                  <li><a href="../../emirate_page/ad.html"> Abu Dhabi</a></li>
+                  <li><a href="../../emirate_page/ajman.html">Ajman</a></li>
+                  <li><a href="../../emirate_page/dubai.html">Dubai</a></li>
+                  <li><a href="../../emirate_page/fujairah.html">Fujairah</a></li>
+                  <li><a href="../../emirate_page/rak.html">Ras Al Khaimah</a></li>
+                  <li><a href="../../emirate_page/sharjah.html">Sharjah</a></li>
+                  <li><a href="../../emirate_page/uaq.html">Umm Al Quwain</a></li>
+                </ul>
+              </div>
+        </div>
         <li style="background-image:url('/images/logo.png'); background-size:100%;"><a style="opacity:0%;">MALHAMA</a></li>
-        <li><a>TRAVEL</a></li>
+        <li><a href="../../itinerarygen.html">TRAVEL</a></li>
         <li><a>ABOUT</a></li>
       </ul>
     </nav>
-    <section style="height:600px; background-image:url('/images/uaq/UAQ Beach/All-about-the-Kite-Beach-Center-in-Umm-Al-Quwain-Cover-A-08-10-2020.jpg');  background-color: rgba(255,255,255,0.6);
-    background-blend-mode: lighten; background-size:cover;"><h1 style="font-size:80px; text-align:center; transform:translateY(200px); color:black;  text-shadow: 2px 2px rgba(255,255,255,0.6);">UAQ BEACH</h1></section>
+    <section style="height:600px; background-image:url('/images/dubai/La mer Beach overhead.jpg');  background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten; background-size:cover;">
+    <h1 style="font-size:80px; text-align:center; transform:translateY(200px); color:black;  text-shadow: 2px 2px rgba(255,255,255,0.6); font-family: 'abril fatface',cursive;">Lamer Beach</h1></section>
     <section class="emirate-desc">
-      <p style="margin-top:60px; text-align:left;">Self-explanatory, the Umm Al Quwain Beach is less-crowded, perfect for those who want a more peaceful and calm experience or larger gatherings. The main beach of Umm Al Quwain follows along the western rim of the emirate. The usual amenities are present; spots for relaxation, walks, exercise, and barbeque sessions. There are also resorts and hotels located here, well-known by Dubai residents and locals alike looking for a cheap beach getaway, for the good value of their room rates. A private section of the beach, Kite Beach Center, contains facilities that further enhance your beach experience, such as an excellent restaurant. Back to the main beach, there are also watersports available for the sportier types, as kayaks, paddleboards. and kitesurfing equipment available for rent. In fact, Kite Beach Center also organizes guided kayak and paddleboard tours of the emirate's mangrove forest.<p>
+      <p style="margin-top:60px; text-align:left;">Bring the whole family to La Mer's beach and enjoy a mini break without boarding a flight. Rent a cabana with views of the Arabian Gulf, sun yourself on our comfortable daybeds while your little ones build a sand castle, take a cooling dip in the sea, or try your hand at paddleboarding, surfing or a range of other water sports. From water slides to water sports, movies to inflatable playgrounds, beach strolls to swims, gourmet dining to high-end shopping, the whole family can get in on the action at La Mer.                   <p>
       <hr style="margin:0 auto; margin-top:-60px; margin-bottom:50px;" size="3" width="75%" color="black" noshade>
     </section>
     <section style="height:500px; display:flex; margin-bottom:80px;">
       <div class="gmaps-view" style="background-color:yellow;"><h1>Dito ang google maps iframe, ako na bahala</h1></div>
       <div class="content-view">
         <button style="width:55%; padding:20px; font-size:25px; border:none;">Contact Info</button>
-        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Mobile Number: N/A</p>
-        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:55%; font-weight:bold;">Email:  HELLO@KITEBEACHCENTER.AE   </p>
-        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Phone: +971 555 07 30 60 </p>
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;"><a href="https://www.lamerdubai.ae/en/?utm_source=google&utm_campaign=local_search&utm_medium=organic&utm_content=&utm_source=google&utm_campaign=local_search&utm_medium=organic&utm_content=">Website</a></p>
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:55%; font-size: 22px; font-weight: bold;">Email: customerservice@lamer.ae  </p>
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Phone Number: +971 4 590 5090</p>
       </div>
     </section>
   </body>

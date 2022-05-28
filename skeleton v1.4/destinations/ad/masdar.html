@@ -3,23 +3,45 @@
   <title>Malhama | Masdar City</title>
   <head>
     <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Urbanist&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('#drop').click(function(){
+            $('#dropdown').toggle()
+           }).trigger('click');
+       });
+    </script>
   </head>
   <body>
     <nav>
       <ul>
-        <li><a>HOME</a></li>
-        <li><a>DESTINATIONS</a></li>
+        <li><a href="../../main_menu.html">HOME</a></li>
+        <div id="drop">
+          <li><a>DESTINATIONS</a></li>
+              <div id="dropdown">
+                <ul>
+                  <li><a href="../../emirate_page/ad.html"> Abu Dhabi</a></li>
+                  <li><a href="../../emirate_page/ajman.html">Ajman</a></li>
+                  <li><a href="../../emirate_page/dubai.html">Dubai</a></li>
+                  <li><a href="../../emirate_page/fujairah.html">Fujairah</a></li>
+                  <li><a href="../../emirate_page/rak.html">Ras Al Khaimah</a></li>
+                  <li><a href="../../emirate_page/sharjah.html">Sharjah</a></li>
+                  <li><a href="../../emirate_page/uaq.html">Umm Al Quwain</a></li>
+                </ul>
+              </div>
+        </div>
         <li style="background-image:url('/images/logo.png'); background-size:100%;"><a style="opacity:0%;">MALHAMA</a></li>
-        <li><a>TRAVEL</a></li>
+        <li><a href="../../itinerarygen.html">TRAVEL</a></li>
         <li><a>ABOUT</a></li>
       </ul>
     </nav>
     <section style="height:600px; background-image:url('/images/ad/Masdar City Overhead.jpg');  background-color: rgba(255,255,255,0.6);
-    background-blend-mode: lighten; background-size:cover;"><h1 style="font-size:80px; text-align:center; transform:translateY(200px); color:black;  text-shadow: 2px 2px rgba(255,255,255,0.6);">MASDAR CITY</h1></section>
+    background-blend-mode: lighten; background-size:cover;"><h1 style="font-size:80px; text-align:center; transform:translateY(200px); color:black;  text-shadow: 2px 2px rgba(255,255,255,0.6); font-family: 'abril fatface',cursive;">Masdar City</h1></section>
     <section class="emirate-desc">
       <p style="margin-top:60px; text-align:left;">Masdar City is a project to create a clean and eco-friendly city, in other words it is a city that aims to function with the upmost sustainability through the use of innovative ideas to create a settlement that is carbon neutral and zero waste. To name a few initiatives: sustainable power solutions, the expansion of green spaces, improvements to the environmental performance of buildings, mobility programmes and the promotion of sustainable urban agriculture. A mixed-use, low-rise, high-density development, Masdar City includes the headquarters for the International Renewable Energy Agency and the recently completed Masdar Institute. Strategically located for Abu Dhabi’s transport infrastructure, Masdar is linked to neighbouring communities and the international airport by existing road and rail routes. The city itself will be the first modern community in the world to operate without fossil-fuelled vehicles at street level. With a maximum distance of 200 metres to the nearest rapid transport links and amenities, the city is designed to encourage walking, while its shaded streets and courtyards offer an attractive pedestrian environment, sheltered from climatic extremes. The land surrounding the city will contain wind and photovoltaic farms, research fields and plantations, allowing the community to be entirely energy self-sufficient.<p>
         <hr style="margin:0 auto; margin-top:-60px; margin-bottom:50px;" size="3" width="75%" color="black" noshade>
@@ -28,9 +50,15 @@
       <div class="gmaps-view" style="background-color:yellow;"><h1>Dito ang google maps iframe, ako na bahala</h1></div>
       <div class="content-view">
         <button style="width:55%; padding:20px; font-size:25px; border:none;">Contact Info</button>
+<<<<<<< Updated upstream
         <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Mobile Number: N/A</p>
         <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:55%; font-weight:bold;">Email:  info@masdar.ae  </p>
         <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Phone: +971 2 653 3333 </p>
+=======
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;"><a href="https://masdarcity.ae/">Website</a></p>
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:55%; font-weight:bold;">Email:  info@masdar.ae  </p>
+        <p style="margin:5px; text-align:center; padding:10px; font-size:25px; width:35%; font-weight:bold;">Phone Number: +971 2 653 3333 </p>
+>>>>>>> Stashed changes
       </div>
     </section>
   </body>

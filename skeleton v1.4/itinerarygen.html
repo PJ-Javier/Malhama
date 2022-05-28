@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Travel | Malhama</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Urbanist&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts.js" type="text/javascript" defer></script>
+     <script>
+      $(document).ready(function(){
+        $('#drop').click(function(){
+            $('#dropdown').toggle()
+           }).trigger('click');
+       });
+    </script>
+    <style>
+      body{
+        margin:0px;
+      }
+      section{
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+        width:100px;
+      }
+      section:hover, article:hover, label{
+        cursor:pointer;
+      }
+      article{
+        height:400px;
+        width:250px;
+        background-color:white;
+        border-radius:10px;
+        margin:25px;
+      }
+      label{
+        margin:2px;
+      }
+      .title-content, .filter-content, .main-content{
+        display:flex;
+        width:100%;
+      }
+      .title-content{
+        height:400px;
+        align-items:center;
+        justify-content:center;
+        background-image: url("images/banner.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .title-content h1{
+        text-align:center;
+        font-size:60px;
+      }
+      .filter-content{
+        height:50px;
+        background-color:#fcde9c;
+        justify-content:space-around;
+      }
+      .main-content{
+        background-color:#DBD5B5;
+        justify-content:space-evenly;
+        flex-wrap:wrap;
+      }
+      .cell-background{
+        background-size:cover;
+        background-repeat:no-repeat;
+        border-radius:10px;
+        height:50%;
+      }
+      .cell-description{
+        margin:10px;
+      }
+      .cell-description h1{
+      text-align: center;
+      margin-bottom: 0px;
+      }
+      .cell-description p{
+        text-align:justify;
+        margin-top:0px;
+        padding:10px;
+        line-height:25px;
+      }
+      .selection{
+        width:150px;
+        z-index:2;
+        opacity:0;
+        color: white;
+        background-color:#7B2D26;
+        transition:opacity 0.5s ease;
+      }
+      section:hover .selection{
+        opacity:1;
+      }
+      section:hover{
+        justify-content:none;
+      }
+     a:hover{
+       color: initial;
+     }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="main_menu.html">HOME</a></li>
+        <div id="drop">
+          <li><a>DESTINATIONS</a></li>
+              <div id="dropdown">
+                <ul>
+                  <li><a href="emirate_page/ad.html"> Abu Dhabi</a></li>
+                  <li><a href="emirate_page/ajman.html">Ajman</a></li>
+                  <li><a href="emirate_page/dubai.html">Dubai</a></li>
+                  <li><a href="emirate_page/fujairah.html">Fujairah</a></li>
+                  <li><a href="emirate_page/ras_al_khaima.html">Ras Al Khaimah</a></li>
+                  <li><a href="emirate_page/sharjah.html">Sharjah</a></li>
+                  <li><a href="emirate_page/uaq.html">Umm Al Quwain</a></li>
+                </ul>
+              </div>
+        </div>
+        <li style="background-image:url('images/logo.png'); background-size:100%;"><a style="opacity:0%;">MALHAMA</a></li>
+        <li><a>TRAVEL</a></li>
+        <li><a>ABOUT</a></li>
+      </ul>
+    </nav>
+    <div class="title-content">
+    </div>
+    <div onmouseout="newFilter()" class="filter-content"> 
+      <section class="theme-filter">
+        <p>Theme</p>
+        <div class="selection">
+          <input type="radio" id="theme-none" name="theme" value="none"><label for="theme-none">None</label><br>
+          <input type="radio" id="theme-family" name="theme" value="family"><label for="theme-family">Family</label><br>
+          <input type="radio" id="theme-nature" name="theme" value="nature"><label for="theme-nature">Nature</label><br>
+          <input type="radio" id="theme-history" name="theme" value="history"><label for="theme-history">History</label><br>
+          <input type="radio" id="theme-culture" name="theme" value="culture"><label for="theme-culture">Culture</label><br>
+          <input type="radio" id="theme-adventure" name="theme" value="adventure"><label for="theme-adventure">Adventure</label><br>
+        </div>
+      </section><!--family, nature, history, culture, adventure-->
+      <section class="cost-filter">
+        <p>Cost</p>
+        <div class="selection">
+          <input type="radio" id="cost-none" name="cost" value="none"><label for="none-free">None</label><br>
+          <input type="radio" id="cost-free" name="cost" value="free"><label for="cost-free">Free</label><br>
+          <input type="radio" id="cost-paid" name="cost" value="paid"><label for="cost-paid">Paid</label><br>
+        </div>
+      </section>
+      <section class="pwd-filter"><p><label for="pwd-checkbox">PWD</label><input type="checkbox" id="pwd-checkbox"></p></section>
+      <section class="pets-filter"><p><label for="pets-checkbox">Pets</label><input type="checkbox" id="pets-checkbox"></p></section>
+    </div>
+    <div class="main-content">
+    <a href="destinations/ad/ferrari.html"><article class="adventure free pwdyes petsyes"><div class="cell-background" style="background-image:url('images/ad/Ferrari World attraction.jpg');"></div><div class="cell-description"><h1>Ferrari World</h1>Adventure<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/ad/grand_mosque.html"><article class="culture history family free pwdyes petsno"><div class="cell-background" style="background-image:url('images/ad/Sheikh Zayed Grand mosque outside.jpg');"></div><div class="cell-description"><h1>Sheikh Zayed Grand Mosque</h1>Culture<br/>Free<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/ad/heritage_vill.html"><article class="culture history family free pwdyes petsno"><div class="cell-background" style="background-image:url('images/ad/Heritage village inside.jpg');"></div><div class="cell-description"><h1>Heritage Village</h1>Culture<br/>Free<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/ad/louvre.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/ad/Louvre.jpg');"></div><div class="cell-description"><h1>Louvre</h1>Culture<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/ad/masdar.html"><article class="nature free pwdyes petsno"><div class="cell-background" style="background-image:url('images/ad/Masdar City Cooling tower.jpg');"></div><div class="cell-description"><h1>Masdar</h1>Culture<br/>Free<br/>PWD:✔<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/ad/warner_bros.html"><article class="adventure family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/ad/Warner Brothers Plaza.jpg');"></div><div class="cell-description"><h1>Warner Bros.</h1>Family<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/ad/yas.html"><article class="adventure family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/ad/Yas Waterworld Slither Slides.jpg');"></div><div class="cell-description"><h1>Yas Island</h1>Family<br/>Free<br/>PWD:✔<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/ajman/ajman_dhow.html"><article class="adventure nature culture family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/ajman/dhow.jpg');"></div><div class="cell-description"><h1>Ajman Dhow Yard</h1>Family<br/>Free<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/ajman/ajman_marina.html"><article class="adventure culture family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/ajman/Ajman Marina Jogging Track.jpg');"></div><div class="cell-description"><h1>Ajman Marina</h1>Family<br/>Free<br/>PWD:✔<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/ajman/museum.html"><article class="history culture family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/ajman/Ajman National museum Cannons.jpg');"></div><div class="cell-description"><h1>Ajman Museum</h1>Culture and History<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/ajman/altallah.html"><article class="adventure culture family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/ajman/tallah2.jpg');"></div><div class="cell-description"><h1>Al Tallah</h1>Al Tallah<br/>Free<br/>PWD:❌<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/ajman/funtastico.html"><article class="adventure family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/ajman/Funtastico-Al-Zorah-1.jpg');"></div><div class="cell-description"><h1>Funtastico</h1>Family and Adventure<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/ajman/zorah_natural.html"><article class="nature family free pwdyes petsno"><div class="cell-background" style="background-image:url('images/ajman/Al Zorah Natural Reserve Wideview.jpg');"></div><div class="cell-description"><h1>Al Zorah</h1>Family and Nature<br/>Free<br/>PWD:✔<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/dubai/alseef.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/dubai/Al seef night.jpg');"></div><div class="cell-description"><h1>Al Seef</h1>History and Culture<br/>Free<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/dubai/burj_alarab.html"><article class="adventure family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/dubai/Burj al arab sunset.jpg');"></div><div class="cell-description"><h1>Burj Al Arab</h1>Adventure<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/dubai/buj_khalifa.html"><article class="adventure family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/dubai/Burj Khalifa at night.jpg');"></div><div class="cell-description"><h1>Burj Khalifa</h1>Adventure<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/dubai/dubai_frame.html"><article class="adventure family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/dubai/Dubai Frame sunset.jpg');"></div><div class="cell-description"><h1>Dubai Frame</h1>Adventure<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/dubai/lamer.html"><article class="adventure family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/dubai/mirgar.jpg');"></div><div class="cell-description"><h1>Miracle Garden</h1>Family and Nature<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/dubai/miracle_garden.html"><article class="adventure family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/dubai/La mer Beach.jpg');"></div><div class="cell-description"><h1>Lamer</h1>Family<br/>Free<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/dubai/museum_of_the_future.html"><article class="adventure history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/dubai/motfins.webp');"></div><div class="cell-description"><h1>Museum of the Future</h1>Adventure<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/dubai/pier7.html"><article class="adventure family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/dubai/Pier 7.jpg');"></div><div class="cell-description"><h1>Pier 7</h1>Family<br/>Free<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/fuj/bithnah_fort.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/fujairah/Al Bithnah Fort/al-bithnah-fort1.jpg');"></div><div class="cell-description"><h1>Al Bithnah Fort</h1>History<br/>Free<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/fuj/corniche.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/fujairah/Corniche Al Fujairah/fujCorniche_20180716175340.jpg');"></div><div class="cell-description"><h1>Corniche</h1>Family<br/>Free<br/>PWD:✔<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/fuj/fuj_fort.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/fujairah/Fujairah Fort/sibf3.jpg');"></div><div class="cell-description"><h1>Fujairah Fort</h1>History<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/fuj/heritage.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/fujairah/Fujairah Heritage Village/Heritagevillagefujairah.jpg');"></div><div class="cell-description"><h1>Fujairah Heritage Village</h1>History and Culture<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/fuj/kalba_park.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/fujairah/Kalba Corniche Park/Kalba-Corniche-Park-04.02.2020.jpg');"></div><div class="cell-description"><h1>Kalba Park</h1>Family<br/>Free<br/>PWD:✔<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/fu/khorfakkan.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/fujairah/Khor Fakkan Beach/Small-boats-at-Khorfakkan-Beach.jpg');"></div><div class="cell-description"><h1>Khor Fakkan Beach</h1>Family and Nature<br/>Free<br/>PWD:✔<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/fuj/umbrella.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/fujairah/Umbrella Beach/kHwnphCu-Fujairah-2021.jpg');"></div><div class="cell-description"><h1>Umbrella Beach</h1>Family and Nature<br/>Free<br/>PWD:✔<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/rak/alhamra.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/rak/Al Jazirah Al Hamra/Al_Jazirah_Al_Hamra_Mosque\,_Ras_Al_Khaimah\,_United_Arab_Emirates.jpg');"></div><div class="cell-description"><h1>Jazirah Al Hamra</h1>History<br/>Free<br/>PWD:❌<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/rak/dhayah.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/rak/Dhayah Fort/d1.jpg');"></div><div class="cell-description"><h1>Al Dhayah Fort</h1>History and Adventure<br/>Free<br/>PWD:❌<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/ra/jebel_jais.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/rak/Jebel Jais/View_from_Jebel_Jais_-_panoramio.jpg');"></div><div class="cell-description"><h1>Jebel Jais</h1>Adventure and Nature<br/>Free<br/>PWD:✔<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/rak/khatt_spring.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/rak/Khatt Springs/07.jpg');"></div><div class="cell-description"><h1>Khatt Springs</h1>Adventure<br/>Paid<br/>PWD:❌<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/rak/rak_museum.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/rak/RAK National Museum/Ras-al-Khaimah-National-Museum-B-10-08-1024x640.jpg');"></div><div class="cell-description"><h1>RAK National Museum</h1>History<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/rak/saqr_park.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/rak/Saqr Park/2-6.jpg');"></div><div class="cell-description"><h1>Saqr Park</h1>Family<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/rak/wadi_shawka.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/rak/Wadi Shawka/wadi-shawka-Cover-10-01.jpg');"></div><div class="cell-description"><h1>Wadi Shawka</h1>Nature and Adventure<br/>Free<br/>PWD:❌<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/sharjah/mahatta_Avi.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/sharjah/Al Mahatta Aviation Museum/AM.jpg');"></div><div class="cell-description"><h1>Mahatta Aviation Museum</h1>History<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/sharjah/mamzar.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/sharjah/Al Mamzar Beach Park/AM2.jpg');"></div><div class="cell-description"><h1>Sharjah Mamzar</h1>Family<br/>Free<br/>PWD:✔<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/sharjah/noor_island.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/sharjah/Al Noor Island/alnoor2.jpg');"></div><div class="cell-description"><h1>Al Noor Island</h1>Family and Nature<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/sharjah/pearl_kingdom.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/sharjah/Pearl Kingdom/p2.jpg');"></div><div class="cell-description"><h1>Pearl Kingdom</h1>Family<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/sharjah/Shj_aquarium.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/sharjah/Sharjah Aquarium/aquarium2.jpg');"></div><div class="cell-description"><h1>Sharjah Aquarium</h1>Family<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/sharjah/shj_Art.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/sharjah/Sharjah Art Museum/Sharjah-Art-Museum-A-18-02-1024x640.jpg');"></div><div class="cell-description"><h1>Sharjah Art Museum</h1>History<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/sharjah/shj_islamic.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/sharjah/Sharjah Museum of Islamic Civilization/SJMI2.png');"></div><div class="cell-description"><h1>Sharjah Islamic Museum</h1>History<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/uaq/alsinniyah.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/uaq/Al Sinniyah Island/si4.jpg');"></div><div class="cell-description"><h1>Al Sinniyah Island</h1>Nature<br/>Free<br/>PWD:✔<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/uaq/dreamland.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/uaq/Dreamland Aqua Park/dl2.webp');"></div><div class="cell-description"><h1>Dreamland Aquapark</h1>Adventure and Family<br/>Paid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/uaq/ed_dur.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/uaq/Ed-Dur/ed dur.jpg');"></div><div class="cell-description"><h1>Ed Dur</h1>History<br/>Free<br/>PWD:❌<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/uaq/falaj_almualla.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/uaq/Falaj Al Mualla/FAM2.jpg');"></div><div class="cell-description"><h1>Falaj Al Mualla</h1>Culture and History<br/>Free<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    <a href="destinations/uaq/mangrove.html"><article class="culture history family paid pwdyes petsyes"><div class="cell-background" style="background-image:url('images/uaq/Mangrove Beach/mangrove2.png');"></div><div class="cell-description"><h1>Mangrove</h1>Nature<br/>Paid<br/>PWD:✔<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/uaq/uaq_breach.html"><article class="nature family paid pwdyes petsyes"><div class="cell-background" style="background-image:url('images/uaq/UAQ Beach/Lr7RzS4t-Kite_Cafe.jpg');"></div><div class="cell-description"><h1>UAQ Kite Beach</h1>Family and Nature<br/>Free<br/>PWD:✔<br/>Pets:✔<br/></p></div></article></a>
+    <a href="destinations/uaq/uaq_museum.html"><article class="culture history family paid pwdyes petsno"><div class="cell-background" style="background-image:url('images/uaq/UAQ National Museum/UAQ-Museum-cannons.jpg');"></div><div class="cell-description"><h1>UAQ National Museum</h1>Culture and History<br/>PAid<br/>PWD:✔<br/>Pets:❌<br/></p></div></article></a>
+    </div>
+    <footer>
+      <p >Ⓒ Malhama Tourism All Rights Reserved 2022</p>
+    </footer>
+  </body>
+</html>
