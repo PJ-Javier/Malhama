@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Urbanist&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../carousel.js" type="text/javascript" defer></script>
 
     <script>
       $(document).ready(function(){
@@ -21,7 +22,20 @@
     <nav>
       <ul>
         <li><a href="../../main_menu.html">HOME</a></li>
-        <li><a>DESTINATIONS</a></li>
+        <div id="drop">
+          <li><a>DESTINATIONS</a></li>
+              <div id="dropdown">
+                <ul>
+                  <li><a href="../../emirate_page/ad.html"> Abu Dhabi</a></li>
+                  <li><a href="../../emirate_page/ajman.html">Ajman</a></li>
+                  <li><a href="../../emirate_page/dubai.html">Dubai</a></li>
+                  <li><a href="../../emirate_page/fujairah.html">Fujairah</a></li>
+                  <li><a href="../../emirate_page/ras_al_khaima.html">Ras Al Khaimah</a></li>
+                  <li><a href="../../emirate_page/sharjah.html">Sharjah</a></li>
+                  <li><a href="../../emirate_page/uaq.html">Umm Al Quwain</a></li>
+                </ul>
+              </div>
+        </div>
         <li style="background-image:url('../../images/logo.png'); background-size:100%;"><a style="opacity:0%;">MALHAMA</a></li>
         <li><a href="../../itinerarygen.html">TRAVEL</a></li>
         <li><a>ABOUT</a></li>
@@ -32,6 +46,19 @@
     <h1 style="font-size:80px; text-align:center; transform:translateY(200px); color:black;  text-shadow: 2px 2px rgba(255,255,255,0.6); font-family: 'abril fatface',cursive;">Al Dour</h1></section>
     <section class="emirate-desc">
       <p style="margin-top:60px; text-align:left;">Al Dour, also known as Ed Dour and Ad Dour, is an ancient coastal settlement in Umm Al Quwain, part of the Near East civilization (an early civilization located in the Middle East). It is one of the largest archaeological sites in the country, overlooking the Al Beidha Lake, and is dubbed as one of the most significant lost cities of Arabia. First discovered by Iraqi archaeologists in 1973, digging began the following year, and a formal exploration commenced in 1989. Evidence of human habilitation span from the Ubeid period, Stone, Bronze, and Iron Ages, and the Pre-Islamic period. The artifacts uncovered at the site have evidence of trade with other civilizations, and ancient Greek manuscripts have reports of the trade of goods with this settlement. This site is on the UNESCO World Heritage list. There is also a temple and a fort here. Timings for visits are from 6 AM - 6 PM.          <p>
+        <div id="slider" class="slider">
+          <div class="wrapper">
+            <a id="prev" class="control prev"></a>
+          <div id="items" class="items">
+            <img class="slide" src="../../images/uaq/Ed-Dur/e1.jpg" alt="">
+            <img class="slide" src="../../images/uaq/Ed-Dur/e2.webp" alt="">
+            <img class="slide" src="../../images/uaq/Ed-Dur/e3.jpg" alt="">
+            <img class="slide" src="../../images/uaq/Ed-Dur/ed dur.jpg" alt="">
+            <img class="slide" src="../../images/uaq/Ed-Dur/ed-dur3.jpg" alt="">
+          </div>
+            <a id="next" class="control next"></a>
+          </div>
+        </div> 
       <hr style="margin:0 auto; margin-top:-60px; margin-bottom:50px;" size="3" width="75%" color="black" noshade>
     </section>
     <section style="height:500px; display:flex; margin-bottom:80px;">
